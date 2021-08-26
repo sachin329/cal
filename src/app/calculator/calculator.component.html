@@ -1,0 +1,20 @@
+<div class="card col-7 m-lg-5 mx-5 bg-info">
+    <div class="card-header bg-">CALCULATOR </div>
+        <div class="form-group d-flex flex-row m-lg-3 p-3 ">
+            <input [(ngModel)]='num1'  type="number" id="num1" class="form-control ">
+            <input [(ngModel)]='num2'  type="number" id="num2" class="form-control ">
+            
+        </div>
+
+    <div class="">
+        <button class="btn btn-success mx-4 " (click)="addition()"> SUM </button>
+        <button class="btn btn-danger mx-4" (click)="sub()"> SUBTRACTION </button>
+        <button class="btn btn-dark mx-4" (click)="div()"> DIVISION </button>
+        <button class="btn mx-4 btn-warning " (click)="mul()"> MULTIPLICATION </button>
+    </div>
+
+    <div class="card-footer mt-5">
+        <h1> the result of  {{num1 }} and {{num2}} is {{result}} </h1>
+    </div>
+</div>
+
